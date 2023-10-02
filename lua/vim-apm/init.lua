@@ -40,7 +40,7 @@ local function shutdown()
     
     -- get namespace id for "vim-apm" & clear keystroke callback function.
     namespace_id = vim.api.nvim_create_namespace("vim-apm")
-    vim.register_keystroke_callback(nil, namespace_id)
+    vim.on_key(nil, namespace_id)
     
     active = false
 end
