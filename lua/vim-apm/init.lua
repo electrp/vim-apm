@@ -26,7 +26,7 @@ end
 
 local function shutdown()
     if win_id ~= 0 then
-        vim.fn.nvim_win_close(win_id, true)
+        vim.api.nvim_win_close(win_id, true)
     end
 
     if bufh ~= 0 then
