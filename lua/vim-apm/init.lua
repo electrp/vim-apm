@@ -56,8 +56,8 @@ local function on_resize()
         return
     end
 
-    local w = vim.fn.nvim_win_get_width(0)
-    local h = vim.fn.nvim_win_get_height(0)
+    local w = vim.api.nvim_win_get_width(0)
+    local h = vim.api.nvim_win_get_height(0)
 
     local width = 14
     local row = 1
