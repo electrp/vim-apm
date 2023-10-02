@@ -129,7 +129,7 @@ local function apm()
         -- Print the goods for the apm
     end))
 
-    vim.register_keystroke_callback(function(buf)
+    vim.api.register_keystroke_callback(function(buf)
         ok, msg = pcall(function()
             local currentTime = Utils.getMillis()
             keyStrokes:onKey(buf)
